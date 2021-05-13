@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    background-image: url(map/map08.png);
+    background-size: 1080px;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    position: relative;
+}
+
+
+.saiko{
+    text-align: right;
+    margin: 1px 2em 1em 1em;
+    
+}
+
+.saikoro_position{
+    margin: 2em 2em 1em 2em;
+    text-align: right;
+}
+
+
+.button_css {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 100vh;
+  border:solid 1px;
+}
+
+.button_css {
+  width: 100px;
+  height: 20px;
+  color: black;
+  font-weight: bold;
+  /* font-size: 1.5em; */
+  background: rgb(237, 240, 87);
+  box-shadow: 0px 5px 0 #000;
+  transition: .3s;
+
+}
+
+.button_css:hover {
+  color: black;
+  box-shadow: none;
+  border:solid 1px;
+  background: rgb(237, 240, 87);
+  transform: translate3d(0, 5px, 0);
+}
+
+
+
+
+
+
+
+.Item{
+  margin: 90px 0 0 0 ;
+  font-size: 75px;
+  width: 100%;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  /* background: #00A7Ea; */
+  background:black;
+  color: #fff;
+  opacity: 0;
+  z-index: 9999;
+  position: absolute;
+  
+  /* アニメーション */
+  animation: fadeIn 3s linear;
+  animation-fill-mode: both;
+}
+/* ---------------------------- */
+/* --- Animation --- */
+/* ---------------------------- */
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+    background-image: url(../saikoroLater/map/map15.png);
+    background-size: 1080px;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+
+/* .saiko{
+    text-align: right;
+    margin: 1px 1em 1em 1em;
+    
+}
+
+.saikoro_position{
+    margin: 2em 2em 1em 2em;
+    text-align: right;
+} */
+
+
+.Item{
+  margin: 200px 0 0 0 ;
+  font-size: 75px;
+  width: 100%;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  /* background: #00A7Ea; */
+  background:black;
+  color: #fff;
+  opacity: 0;
+  
+  /* アニメーション */
+  animation: fadeIn 4s linear;
+  animation-fill-mode: both;
+}
+/* ---------------------------- */
+/* --- Animation --- */
+/* ---------------------------- */
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+
+

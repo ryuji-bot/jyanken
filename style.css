@@ -1,0 +1,117 @@
+body{
+  background-image: url(images/TOP.png);
+  width: 100%;
+  font-family: 'Helvetica', -apple-system, BlinkMacSystemFont, YuGothic, "Yu Gothic Medium", "Yu Gothic", 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
+}
+
+h1{
+  color: white;
+  font-size: 75px;
+  margin: 75px 0 15px 0;
+  text-align: center;
+  text-shadow: 0px 0px 1px #000,4px 4px 2px rgba(0,0,0,0.5);
+  /* padding:15px 0 0 0; */
+  /* font-style: italic; */
+  letter-spacing: 15px;
+  opacity: 0;
+  
+  /* アニメーション */
+  animation: fadeIn 3s linear;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+.quest{
+  color: white;
+}
+
+p{
+  font-size: 50px;
+  color:white;
+  text-align: center;
+  line-height: 0px;
+  margin: 0 0 150px 0;
+  text-shadow: 0px 0px 1px #000,4px 4px 2px rgba(0,0,0,0.5);
+  opacity: 0;
+  
+  /* アニメーション */
+  animation: fadeIn 3s linear;
+  animation-fill-mode: both;
+}
+/* ---------------------------- */
+/* --- Animation --- */
+/* ---------------------------- */
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+
+
+.button a {
+  font-family: 'Helvetica', -apple-system, BlinkMacSystemFont, YuGothic, "Yu Gothic Medium", "Yu Gothic", 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 0;
+  margin: 10px auto;
+  width: 300px;
+  background: #e5e8eb;
+  display: block;
+  transition: .2s;
+  box-shadow: 0 3px 0 #0a71b0;
+  border-radius: 3px;
+}
+
+.button a:hover {
+  box-shadow: none;
+  transform: translate3d(0, 3px, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#fff;  /* 背景カラー */
+  z-index: 9999;  /* 一番手前に */
+  pointer-events: none;  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;  /* 初期値 : 透過状態 */
+  /* -webkit-transition: opacity 0.8s ease;  アニメーション時間は 0.8秒 */
+  transition: opacity 0.8s ease;
+}
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+body.fadeout article{
+  /* -webkit-transform:scale(1.2); */
+  transform:scale(1.2);
+}
